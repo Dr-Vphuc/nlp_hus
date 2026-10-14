@@ -1,9 +1,10 @@
 # LAB 04 — Text Classification (IMDb Sentiment)
 
-**Môn:** Xử lý ngôn ngữ tự nhiên và ứng dụng — Học kỳ I 2026
-**Chủ đề:** From Text Representation to Supervised NLP
-**Bài toán:** Option A — Sentiment classification (`positive` / `negative`)
-**Dataset:** [IMDb](https://huggingface.co/datasets/stanfordnlp/imdb) — 25,000 train / 25,000 test review phim
+**Môn:** Xử lý ngôn ngữ tự nhiên và ứng dụng — Học kỳ I 2026  
+**Chủ đề:** From Text Representation to Supervised NLP  
+**Bài toán:** Option A — Sentiment classification (`positive` / `negative`)  
+**Dataset:** [IMDb](https://huggingface.co/datasets/stanfordnlp/imdb) — 25,000 train / 25,000 test review phim  
+**Repo:** [https://github.com/Dr-Vphuc/nlp_hus](https://github.com/Dr-Vphuc/nlp_hus)
 
 ## Cấu trúc thư mục
 
