@@ -43,10 +43,10 @@ LSTM có chắc chắn cho accuracy cao hơn RNN trên mọi dataset không?
 
 ## Kiểm chứng (điền sau khi chạy notebook)
 
-| Prediction | Kiểm chứng ở | Đúng / sai / một phần | Ghi chú |
-|---|---|---|---|
-| 1 | Notebook mục 6 (shuffle test, cặp câu cùng bag-of-words) | | |
-| 2 | Mục 7 (Exp 4), mục 9 (Exp 6) | | |
-| 3 | Mục 8 (Exp 2/5 — RNN với max_length 50 → 200) | | |
-| 4 | Mục 8 (max_length = 30) | | |
-| 5 | Mục 7, mục 8 | | |
+| Prediction | Kiểm chứng ở | Đúng / sai / một phần | 
+|---|---|---|
+| 1 | Notebook mục 6 (shuffle test, cặp câu cùng bag-of-words) | Đúng | 
+| 2 | Mục 7 (Exp 4), mục 9 (Exp 6) | Đúng | 
+| 3 | Mục 8 (Exp 2/5, RNN với max_length 50 → 200) | Một phần | 
+| 4 | Mục 8 (max_length = 30) | Đúng | 
+| 5 | Mục 7, mục 8 | Sai | 
