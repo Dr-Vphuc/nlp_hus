@@ -1,0 +1,22 @@
+device cpu threads 8
+epoch 1 step 100/878 loss 0.9680 (208s)
+epoch 1 step 200/878 loss 0.5562 (379s)
+epoch 1 step 300/878 loss 0.4007 (619s)
+epoch 1 step 400/878 loss 0.3208 (852s)
+epoch 1 step 500/878 loss 0.2702 (1149s)
+device cpu threads 8
+RESUME from epoch 1 step 500
+epoch 1 step 600/878 loss 0.2350 (1365s)
+epoch 1 step 700/878 loss 0.2100 (1526s)
+epoch 1 step 800/878 loss 0.1913 (1694s)
+== epoch 1: train loss 0.1797, val entity F1 0.9157
+epoch 2 step 100/878 loss 0.0285 (2024s)
+epoch 2 step 200/878 loss 0.0265 (2181s)
+epoch 2 step 300/878 loss 0.0275 (2349s)
+epoch 2 step 400/878 loss 0.0268 (2495s)
+epoch 2 step 500/878 loss 0.0269 (2640s)
+epoch 2 step 600/878 loss 0.0268 (2784s)
+epoch 2 step 700/878 loss 0.0260 (2925s)
+epoch 2 step 800/878 loss 0.0260 (3068s)
+== epoch 2: train loss 0.0257, val entity F1 0.9351
+saved transformer_predictions.json

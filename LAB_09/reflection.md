@@ -1,0 +1,14 @@
+# Reflection — LAB 09
+
+> Câu hỏi: Tại sao cùng một pretrained Transformer có thể dùng cho cả sequence classification và token classification chỉ bằng cách thay đổi phần prediction head? (300–500 từ)
+> AI policy: bản nháp này do AI soạn từ kết quả thực nghiệm của lab, sinh viên cần đọc lại và viết lại bằng ý của mình.
+
+Pretrained Transformer (ở đây là DistilBERT, LAB 08 dùng BERT) thực chất là một **bộ tạo contextual representation**: với đầu vào `T` token, nó trả về `T` vector `h₁…h_T ∈ ℝ^d` (d = 768), trong đó mỗi `hₜ` đã tổng hợp thông tin của *toàn bộ câu* qua nhiều lớp self-attention. Phần "hiểu ngôn ngữ" nằm hoàn toàn trong các vector này. Bài toán downstream chỉ khác nhau ở chỗ ta **đọc** các vector đó như thế nào và **nhãn** được định nghĩa ra sao.
+
+Với **sequence classification** (LAB 08), nhãn nằm ở mức cả câu, nên ta lấy một vector đại diện, thường là `[CLS]` (nhờ self-attention và pretraining mà `h_[CLS]` tóm tắt cả câu), đưa qua một lớp tuyến tính `ℝ^d → ℝ^K` để ra *một* phân phối nhãn cho cả câu. Với **token classification / NER** (LAB 09), nhãn nằm ở mức từng token, nên ta không cần gộp: ta áp dụng *cùng một* lớp tuyến tính `W ∈ ℝ^{d×9}` lên **mọi** `hₜ`, được logits `T×9`, và mỗi token có một dự đoán BIO riêng. Backbone gần như không đổi: chỉ có (1) head khởi tạo mới (ở đây chỉ 768·9+9 = 6,921 tham số trên tổng ~66M), (2) loss tính trên nhiều vị trí thay vì một (cross-entropy trên token, bỏ qua các vị trí `-100`), và (3) cách định nghĩa label (BIO + alignment theo word_ids). Fine-tuning điều chỉnh toàn bộ trọng số để các `hₜ` mang thông tin phù hợp với đầu ra mới, nhưng nền tảng (ngữ pháp, ngữ nghĩa, kiến thức thế giới học từ pretraining) được tái sử dụng.
+
+Điều này khả thi vì biểu diễn là **contextual**: cùng chuỗi ký tự "Washington" có thể có `h` khác nhau khi là người, địa danh hay đội bóng, nên một lớp tuyến tính đơn giản đủ để tách chúng. Trong thực nghiệm, model contextual đạt entity-level F1 0.893, so với 0.765 của baseline logistic regression chỉ nhìn cửa sổ ±2 từ; khoảng cách lớn nhất ở entity chưa thấy trong train (0.846 so với 0.623).
+
+Có hai điểm cần lưu ý. Thứ nhất, vì tokenizer chia word thành subword nên "mỗi token một nhãn" không đồng nghĩa "mỗi word một nhãn"; ta phải căn nhãn (Strategy A: subword đầu có nhãn, phần còn lại IGNORE) và khi suy luận lấy dự đoán của subword đầu. Thứ hai, head này dự đoán từng token độc lập, không ràng buộc BIO (có thể ra `I-PER` sau `O`), nên metric phải tính ở mức entity chứ không chỉ token accuracy.
+
+Cùng backbone đó còn dùng được cho LAB 10 (Question Answering): chỉ đổi head thành `start`/`end` để dự đoán *span*. Pretrained Transformer là backbone tạo contextual representation, còn **task được quyết định bởi prediction head và cách định nghĩa output/label**: sequence task (`[CLS]` → một nhãn), token task (mọi token → BIO), span task (start/end).

@@ -1,0 +1,4 @@
+ner_checkpoint/
+__pycache__/
+resume_state.pt*
+train.err

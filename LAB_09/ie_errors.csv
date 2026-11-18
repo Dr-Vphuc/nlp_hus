@@ -1,0 +1,6 @@
+sentence,error,type,entity
+Apple chief executive Tim Cook announced new products in Cupertino .,FP,ORG,Cupertino
+Apple chief executive Tim Cook announced new products in Cupertino .,FN,LOC,Cupertino
+Tesla shares fell after Elon Musk posted on Twitter .,FP,ORG,Elon Musk
+Tesla shares fell after Elon Musk posted on Twitter .,FN,PER,Elon Musk
+Tesla shares fell after Elon Musk posted on Twitter .,FN,ORG,Twitter

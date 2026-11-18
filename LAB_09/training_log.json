@@ -1,0 +1,22 @@
+{
+ "model": "distilbert-base-cased",
+ "epochs": 2,
+ "batch_size": 16,
+ "lr": 5e-05,
+ "log": [
+  {
+   "epoch": 1,
+   "train_loss": 0.1797324502328835,
+   "val_f1": 0.9157416750756812,
+   "elapsed_s": 1859.635636806488
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.025727557493143042,
+   "val_f1": 0.93512154233026,
+   "elapsed_s": 3216.667922973633
+  }
+ ],
+ "train_time_s": 3216.861130952835,
+ "n_params": 65197833
+}

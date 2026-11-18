@@ -1,0 +1,25 @@
+kind,sent_id,text,gold,prediction,pred_conf
+fp,416,The injury-plagued Indianapolis Colts lost another quarterback on Thursday but last year 's AFC finalists rallied together to shoot down the Philadelphia Eagles 37-10 in a showdown of playoff contenders .,-,[AFC](ORG),0.905
+fp,1607,Feedlots reporting moderate inquiry .,-,[Feedlots](ORG),0.787
+fp,1611,Slaughter Heifers - Select and Choice 2-3 1050-1100 lbs 67.00 .,-,[Choice](ORG),0.967
+fp,1713,Oats 286.5 284.6 31.9 937.3 581.2,-,[Oats](ORG),0.864
+fp,2125,"Addressing a convention on Italian unity in Mantua , where the party has set up its own "" parliament of the north "" , Scalfaro made a direct appeal to what he called "" my friends from the League "" to work instead for federal reform .",-,[Mantua](LOC),0.991
+fp,2447,"Previous victories ( two ) : slalom , Lillehammer Norway , 1993 ; super G , Flachau , Austria , 1995 .",-,[G](MISC),0.795
+fn,248,CRICKET - AUSTRALIA V WEST INDIES WORLD SERIES SCOREBOARD .,[WORLD SERIES](MISC),-,
+fn,557,NCAA AMERICAN FOOTBALL-OHIO STATE 'S PACE FIRST REPEAT LOMBARDI AWARD WINNER .,[FOOTBALL-OHIO STATE](MISC),-,
+fn,689,SOCCER - WEAH HEAD-BUTT DEPRIVES PORTUGAL OF COSTA .,[PORTUGAL](LOC),-,
+fn,1129,MIDEAST / RED SEA -,[RED SEA](LOC),-,
+fn,1908,"COAL - Lantau Peak - 120,000 tones coal Hay Point or Newcastle / Kaohsiung 20-30/1 $ 5.25 and $ 5.85 fio respectively 40,000-35,000 / 28,000 shinc China Steel .",[China Steel](ORG),-,
+fn,3388,BOXING - SCHULZ DEFEATS RIBALTA IN IBF HEAVYWEIGHT FIGHT .,[RIBALTA](PER),-,
+boundary,74,SOCCER - ASIAN CUP GROUP C RESULTS .,[ASIAN CUP](MISC),[ASIAN CUP GROUP](MISC),0.992
+boundary,962,"Some analysts say cheaper but high-quality Czech imports could invade Poland once tariffs for CEFTA countries are lifted in 1998 , but van Boxmeer says such a threat might be exaggerated despite the Czech beer market 's overcapacity .",[Boxmeer](PER),[van Boxmeer](PER),0.882
+boundary,1068,"The contract involved upgrading the flight data processing system at the Oceanic Control Centre in Prestwick in south west Scotland for National Air Traffic Services Ltd ( NATS ) , subsidiary of the Civil Aviation Authority .",[Oceanic Control Centre](LOC),[Control Centre](LOC),0.564
+boundary,1596,Israel and Lahd have repeatedly demanded safety guarantees for the SLA -- a mixed Christian-Shi'ite Moslem force -- which the Jewish states regards as loyal allies .,[Moslem](MISC),[Christian-Shi'ite Moslem](MISC),0.997
+boundary,2068,"Mike Cito , 17 , was expelled from St Pius X High School in Albuquerque after an October game in which he used the sharpened chin strap buckles to injure two opposing players and the referee .",[St Pius X High School](ORG),[High School](ORG),0.69
+boundary,2270,"Algoa Day 21/11/96 6,000 Africa",[Algoa Day](MISC),[Day](MISC),0.791
+wrong_type,888,"More than 14,000 people have lost their lives in over a decade of political turf wars between the ANC and Zulu Chief Mangosuthu Buthelezi 's Inkatha Freedom Party in the province .",[Zulu](MISC),[Zulu](ORG),0.89
+wrong_type,1571,""" It shows that Sakakibara is not for a stronger dollar either , "" said Sumitomo 's Note .",[Sumitomo](ORG),[Sumitomo](PER),0.999
+wrong_type,2039,LOS ANGELES 1996-12-05,[LOS ANGELES](ORG),[LOS ANGELES](LOC),0.968
+wrong_type,2382,""" In the coming five to ten years , Ahold plans to open many more stores of both formats , making TOPS and BILO household names in the region , "" Ahold said in a statement .",[Ahold](ORG),[Ahold](PER),0.719
+wrong_type,3238,South Korea 4 Indonesia 2 ( 3-0 ),[South Korea](LOC),[South Korea](ORG),0.996
+wrong_type,3247,UAE 2 1 1 0 4 3 4,[UAE](LOC),[UAE](ORG),0.998

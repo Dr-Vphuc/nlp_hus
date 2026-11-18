@@ -1,0 +1,673 @@
+[
+ {
+  "text": "Barack Obama visited Paris on Monday.",
+  "extracted": {
+   "PERSON": [
+    "Barack Obama"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Paris"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Barack Obama"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Paris"
+   ]
+  }
+ },
+ {
+  "text": "Apple chief executive Tim Cook announced new products in Cupertino.",
+  "extracted": {
+   "PERSON": [
+    "Tim Cook"
+   ],
+   "ORGANIZATION": [
+    "Apple",
+    "Cupertino"
+   ],
+   "LOCATION": []
+  },
+  "gold": {
+   "PERSON": [
+    "Tim Cook"
+   ],
+   "ORGANIZATION": [
+    "Apple"
+   ],
+   "LOCATION": [
+    "Cupertino"
+   ]
+  }
+ },
+ {
+  "text": "Angela Merkel met Emmanuel Macron in Berlin to discuss the European Union budget.",
+  "extracted": {
+   "PERSON": [
+    "Angela Merkel",
+    "Emmanuel Macron"
+   ],
+   "ORGANIZATION": [
+    "European Union"
+   ],
+   "LOCATION": [
+    "Berlin"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Angela Merkel",
+    "Emmanuel Macron"
+   ],
+   "ORGANIZATION": [
+    "European Union"
+   ],
+   "LOCATION": [
+    "Berlin"
+   ]
+  }
+ },
+ {
+  "text": "Microsoft said on Tuesday it would open a new office in Dublin.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Microsoft"
+   ],
+   "LOCATION": [
+    "Dublin"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Microsoft"
+   ],
+   "LOCATION": [
+    "Dublin"
+   ]
+  }
+ },
+ {
+  "text": "The United Nations Security Council held an emergency meeting in New York.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "United Nations Security Council"
+   ],
+   "LOCATION": [
+    "New York"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "United Nations Security Council"
+   ],
+   "LOCATION": [
+    "New York"
+   ]
+  }
+ },
+ {
+  "text": "Manchester United beat Chelsea 2-1 on Saturday.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Manchester United",
+    "Chelsea"
+   ],
+   "LOCATION": []
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Manchester United",
+    "Chelsea"
+   ],
+   "LOCATION": []
+  }
+ },
+ {
+  "text": "Prime Minister Narendra Modi arrived in Tokyo for talks with Fumio Kishida.",
+  "extracted": {
+   "PERSON": [
+    "Narendra Modi",
+    "Fumio Kishida"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Tokyo"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Narendra Modi",
+    "Fumio Kishida"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Tokyo"
+   ]
+  }
+ },
+ {
+  "text": "Reuters reported that Toyota will build a factory in Texas.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Reuters",
+    "Toyota"
+   ],
+   "LOCATION": [
+    "Texas"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Reuters",
+    "Toyota"
+   ],
+   "LOCATION": [
+    "Texas"
+   ]
+  }
+ },
+ {
+  "text": "Elon Musk founded SpaceX in California.",
+  "extracted": {
+   "PERSON": [
+    "Elon Musk"
+   ],
+   "ORGANIZATION": [
+    "SpaceX"
+   ],
+   "LOCATION": [
+    "California"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Elon Musk"
+   ],
+   "ORGANIZATION": [
+    "SpaceX"
+   ],
+   "LOCATION": [
+    "California"
+   ]
+  }
+ },
+ {
+  "text": "Researchers at Stanford University and the Massachusetts Institute of Technology published the study last week.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Stanford University",
+    "Massachusetts Institute of Technology"
+   ],
+   "LOCATION": []
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Stanford University",
+    "Massachusetts Institute of Technology"
+   ],
+   "LOCATION": []
+  }
+ },
+ {
+  "text": "Pele was born in Brazil and later played for Santos.",
+  "extracted": {
+   "PERSON": [
+    "Pele"
+   ],
+   "ORGANIZATION": [
+    "Santos"
+   ],
+   "LOCATION": [
+    "Brazil"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Pele"
+   ],
+   "ORGANIZATION": [
+    "Santos"
+   ],
+   "LOCATION": [
+    "Brazil"
+   ]
+  }
+ },
+ {
+  "text": "The World Health Organization warned that cases were rising in Africa.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "World Health Organization"
+   ],
+   "LOCATION": [
+    "Africa"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "World Health Organization"
+   ],
+   "LOCATION": [
+    "Africa"
+   ]
+  }
+ },
+ {
+  "text": "Samsung Electronics and Google signed an agreement in Seoul.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Samsung Electronics",
+    "Google"
+   ],
+   "LOCATION": [
+    "Seoul"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Samsung Electronics",
+    "Google"
+   ],
+   "LOCATION": [
+    "Seoul"
+   ]
+  }
+ },
+ {
+  "text": "President Joe Biden spoke with Volodymyr Zelensky from Washington.",
+  "extracted": {
+   "PERSON": [
+    "Joe Biden",
+    "Volodymyr Zelensky"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Washington"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Joe Biden",
+    "Volodymyr Zelensky"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Washington"
+   ]
+  }
+ },
+ {
+  "text": "Lionel Messi scored twice as Argentina defeated France in Qatar.",
+  "extracted": {
+   "PERSON": [
+    "Lionel Messi"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Argentina",
+    "France",
+    "Qatar"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Lionel Messi"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Argentina",
+    "France",
+    "Qatar"
+   ]
+  }
+ },
+ {
+  "text": "Goldman Sachs analysts expect the Federal Reserve to cut rates in March.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Goldman Sachs",
+    "Federal Reserve"
+   ],
+   "LOCATION": []
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Goldman Sachs",
+    "Federal Reserve"
+   ],
+   "LOCATION": []
+  }
+ },
+ {
+  "text": "Marie Curie worked at the University of Paris.",
+  "extracted": {
+   "PERSON": [
+    "Marie Curie"
+   ],
+   "ORGANIZATION": [
+    "University of Paris"
+   ],
+   "LOCATION": []
+  },
+  "gold": {
+   "PERSON": [
+    "Marie Curie"
+   ],
+   "ORGANIZATION": [
+    "University of Paris"
+   ],
+   "LOCATION": []
+  }
+ },
+ {
+  "text": "Amazon opened a warehouse near Mumbai, while Flipkart expanded in Bangalore.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Amazon",
+    "Flipkart"
+   ],
+   "LOCATION": [
+    "Mumbai",
+    "Bangalore"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Amazon",
+    "Flipkart"
+   ],
+   "LOCATION": [
+    "Mumbai",
+    "Bangalore"
+   ]
+  }
+ },
+ {
+  "text": "Vietnam Airlines launched a new route between Hanoi and Singapore.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Vietnam Airlines"
+   ],
+   "LOCATION": [
+    "Hanoi",
+    "Singapore"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Vietnam Airlines"
+   ],
+   "LOCATION": [
+    "Hanoi",
+    "Singapore"
+   ]
+  }
+ },
+ {
+  "text": "The European Commission fined Meta 1.2 billion euros.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "European Commission",
+    "Meta"
+   ],
+   "LOCATION": []
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "European Commission",
+    "Meta"
+   ],
+   "LOCATION": []
+  }
+ },
+ {
+  "text": "Novak Djokovic won the Australian Open final in Melbourne.",
+  "extracted": {
+   "PERSON": [
+    "Novak Djokovic"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Melbourne"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Novak Djokovic"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Melbourne"
+   ]
+  }
+ },
+ {
+  "text": "Tesla shares fell after Elon Musk posted on Twitter.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Tesla",
+    "Elon Musk"
+   ],
+   "LOCATION": []
+  },
+  "gold": {
+   "PERSON": [
+    "Elon Musk"
+   ],
+   "ORGANIZATION": [
+    "Tesla",
+    "Twitter"
+   ],
+   "LOCATION": []
+  }
+ },
+ {
+  "text": "A spokesman for the Pentagon said troops would leave Iraq by December.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Pentagon"
+   ],
+   "LOCATION": [
+    "Iraq"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Pentagon"
+   ],
+   "LOCATION": [
+    "Iraq"
+   ]
+  }
+ },
+ {
+  "text": "Volkswagen plans to close a plant in Dresden, the company told Reuters.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Volkswagen",
+    "Reuters"
+   ],
+   "LOCATION": [
+    "Dresden"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Volkswagen",
+    "Reuters"
+   ],
+   "LOCATION": [
+    "Dresden"
+   ]
+  }
+ },
+ {
+  "text": "Sundar Pichai met Indian officials in Delhi.",
+  "extracted": {
+   "PERSON": [
+    "Sundar Pichai"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Delhi"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Sundar Pichai"
+   ],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Delhi"
+   ]
+  }
+ },
+ {
+  "text": "The Bank of England raised interest rates, Governor Andrew Bailey said in London.",
+  "extracted": {
+   "PERSON": [
+    "Andrew Bailey"
+   ],
+   "ORGANIZATION": [
+    "Bank of England"
+   ],
+   "LOCATION": [
+    "London"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Andrew Bailey"
+   ],
+   "ORGANIZATION": [
+    "Bank of England"
+   ],
+   "LOCATION": [
+    "London"
+   ]
+  }
+ },
+ {
+  "text": "Mount Everest lies on the border between Nepal and China.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Mount Everest",
+    "Nepal",
+    "China"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [],
+   "LOCATION": [
+    "Mount Everest",
+    "Nepal",
+    "China"
+   ]
+  }
+ },
+ {
+  "text": "Jack Ma stepped down as chairman of Alibaba in Hangzhou.",
+  "extracted": {
+   "PERSON": [
+    "Jack Ma"
+   ],
+   "ORGANIZATION": [
+    "Alibaba"
+   ],
+   "LOCATION": [
+    "Hangzhou"
+   ]
+  },
+  "gold": {
+   "PERSON": [
+    "Jack Ma"
+   ],
+   "ORGANIZATION": [
+    "Alibaba"
+   ],
+   "LOCATION": [
+    "Hangzhou"
+   ]
+  }
+ },
+ {
+  "text": "Liverpool signed Mohamed Salah from Roma in 2017.",
+  "extracted": {
+   "PERSON": [
+    "Mohamed Salah"
+   ],
+   "ORGANIZATION": [
+    "Liverpool",
+    "Roma"
+   ],
+   "LOCATION": []
+  },
+  "gold": {
+   "PERSON": [
+    "Mohamed Salah"
+   ],
+   "ORGANIZATION": [
+    "Liverpool",
+    "Roma"
+   ],
+   "LOCATION": []
+  }
+ },
+ {
+  "text": "Greenpeace activists protested outside the Shell headquarters in The Hague.",
+  "extracted": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Greenpeace",
+    "Shell"
+   ],
+   "LOCATION": [
+    "The Hague"
+   ]
+  },
+  "gold": {
+   "PERSON": [],
+   "ORGANIZATION": [
+    "Greenpeace",
+    "Shell"
+   ],
+   "LOCATION": [
+    "The Hague"
+   ]
+  }
+ }
+]
