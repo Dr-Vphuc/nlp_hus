@@ -1,0 +1,77 @@
+{
+  "name": "ft_len64_50",
+  "exp": "exp4",
+  "kind": "bert",
+  "pretrained": true,
+  "freeze": false,
+  "train_frac": 0.5,
+  "max_len": 64,
+  "epochs": 2,
+  "batch_size": 32,
+  "accum_steps": 1,
+  "lr": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "seed": 42,
+  "full_test": false,
+  "domain_eval": false,
+  "demo": false,
+  "note": "",
+  "model": "distilbert-base-uncased",
+  "tokenizer": "distilbert-base-uncased",
+  "n_train": 5000,
+  "n_val": 2000,
+  "n_test": 5000,
+  "n_params": 66364418,
+  "trainable_params": 66364418,
+  "train_time_s": 102.55289435386658,
+  "time_per_epoch_s": 47.93649709224701,
+  "peak_gpu_mem_mb": 1324.1162109375,
+  "infer_time_test_s": 7.794859409332275,
+  "best_epoch": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5417868963241577,
+      "val_loss": 0.4377736747264862,
+      "val_acc": 0.7905,
+      "epoch_time_s": 47.679938077926636
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.36995333776474,
+      "val_loss": 0.4334357976913452,
+      "val_acc": 0.7915,
+      "epoch_time_s": 48.19305610656738
+    }
+  ],
+  "hardware": "NVIDIA GeForce RTX 3050 6GB Laptop GPU (6 GB), torch 2.14.1+cu126",
+  "optimizer": "AdamW",
+  "metrics": {
+    "imdb_val": {
+      "accuracy": 0.7915,
+      "precision": 0.7877591312931885,
+      "recall": 0.798,
+      "f1": 0.7928464977645305,
+      "loss": 0.4334357976913452,
+      "tn": 785,
+      "fp": 215,
+      "fn": 202,
+      "tp": 798,
+      "n": 2000
+    },
+    "imdb_test": {
+      "accuracy": 0.7932,
+      "precision": 0.7879025923016496,
+      "recall": 0.8024,
+      "f1": 0.7950852160126833,
+      "loss": 0.4420691430568695,
+      "tn": 1960,
+      "fp": 540,
+      "fn": 494,
+      "tp": 2006,
+      "n": 5000
+    }
+  },
+  "demo_preds": null
+}

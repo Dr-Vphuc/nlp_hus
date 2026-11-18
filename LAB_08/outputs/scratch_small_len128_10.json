@@ -1,0 +1,105 @@
+{
+  "name": "scratch_small_len128_10",
+  "exp": "exp3",
+  "kind": "small",
+  "pretrained": false,
+  "freeze": false,
+  "train_frac": 0.1,
+  "max_len": 128,
+  "epochs": 6,
+  "batch_size": 64,
+  "accum_steps": 1,
+  "lr": 0.0005,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "seed": 42,
+  "full_test": false,
+  "domain_eval": false,
+  "demo": false,
+  "note": "",
+  "model": "SmallTransformer(4L,d256,h4)",
+  "tokenizer": "distilbert-base-uncased",
+  "n_train": 1000,
+  "n_val": 2000,
+  "n_test": 5000,
+  "n_params": 11104770,
+  "trainable_params": 11104770,
+  "train_time_s": 187.6074995994568,
+  "time_per_epoch_s": 29.556116342544556,
+  "peak_gpu_mem_mb": 546.7998046875,
+  "infer_time_test_s": 6.538678884506226,
+  "best_epoch": 4,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8524596152305604,
+      "val_loss": 0.7687820792198181,
+      "val_acc": 0.5,
+      "epoch_time_s": 161.35875153541565
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7764979939460754,
+      "val_loss": 0.6920939683914185,
+      "val_acc": 0.5015,
+      "epoch_time_s": 3.1241142749786377
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6801419949531555,
+      "val_loss": 0.6963685750961304,
+      "val_acc": 0.557,
+      "epoch_time_s": 3.2425949573516846
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.629589385509491,
+      "val_loss": 0.6650235652923584,
+      "val_acc": 0.6135,
+      "epoch_time_s": 3.1827688217163086
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.5641760897636413,
+      "val_loss": 0.7053043246269226,
+      "val_acc": 0.632,
+      "epoch_time_s": 3.194894790649414
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.5076792352199554,
+      "val_loss": 0.7059357762336731,
+      "val_acc": 0.6355,
+      "epoch_time_s": 3.2335736751556396
+    }
+  ],
+  "hardware": "NVIDIA GeForce RTX 3050 6GB Laptop GPU (6 GB), torch 2.14.1+cu126",
+  "optimizer": "AdamW",
+  "metrics": {
+    "imdb_val": {
+      "accuracy": 0.6135,
+      "precision": 0.6288308740068105,
+      "recall": 0.554,
+      "f1": 0.5890483785220627,
+      "loss": 0.6650235652923584,
+      "tn": 673,
+      "fp": 327,
+      "fn": 446,
+      "tp": 554,
+      "n": 2000
+    },
+    "imdb_test": {
+      "accuracy": 0.5948,
+      "precision": 0.6057091882247992,
+      "recall": 0.5432,
+      "f1": 0.5727541121889498,
+      "loss": 0.6736845970153809,
+      "tn": 1616,
+      "fp": 884,
+      "fn": 1142,
+      "tp": 1358,
+      "n": 5000
+    }
+  },
+  "demo_preds": null
+}

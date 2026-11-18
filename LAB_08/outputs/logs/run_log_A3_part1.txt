@@ -1,0 +1,53 @@
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  11%|█         | 11/100 [00:00<00:00, 93.27it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 527.58it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 457.30it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+=== ft_len128_50 | exp3+exp4 | train=5000 val=2000 test=5000 | params=66,364,418 trainable=66,364,418 | max_len=128 ===
+    step 100/157 loss=0.5170 (63 samples/s)
+  epoch 1/2 train_loss=0.4735 val_loss=0.3346 val_acc=0.8515 (80s)
+    step 100/157 loss=0.2897 (62 samples/s)
+  epoch 2/2 train_loss=0.2810 val_loss=0.3301 val_acc=0.8580 (80s)
+  -> TEST acc=0.8584 f1=0.8602 | train 173s | peak mem 1572 MB | best epoch 2
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  17%|█▋        | 17/100 [00:00<00:00, 168.93it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 903.88it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+=== ft_len64_50 | exp4 | train=5000 val=2000 test=5000 | params=66,364,418 trainable=66,364,418 | max_len=64 ===
+    step 100/157 loss=0.5773 (106 samples/s)
+  epoch 1/2 train_loss=0.5418 val_loss=0.4378 val_acc=0.7905 (48s)
+    step 100/157 loss=0.3741 (104 samples/s)
+  epoch 2/2 train_loss=0.3700 val_loss=0.4334 val_acc=0.7915 (48s)
+  -> TEST acc=0.7932 f1=0.7951 | train 103s | peak mem 1324 MB | best epoch 2
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 19/100 [00:00<00:00, 186.05it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 805.64it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+=== ft_len256_50 | exp4 | train=5000 val=2000 test=5000 | params=66,364,418 trainable=66,364,418 | max_len=256 ===
+    step 100/157 loss=0.4590 (34 samples/s)

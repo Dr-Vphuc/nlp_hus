@@ -1,0 +1,77 @@
+{
+  "name": "frozen_len128_50",
+  "exp": "exp3",
+  "kind": "bert",
+  "pretrained": true,
+  "freeze": true,
+  "train_frac": 0.5,
+  "max_len": 128,
+  "epochs": 2,
+  "batch_size": 32,
+  "accum_steps": 1,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "seed": 42,
+  "full_test": false,
+  "domain_eval": false,
+  "demo": false,
+  "note": "",
+  "model": "distilbert-base-uncased",
+  "tokenizer": "distilbert-base-uncased",
+  "n_train": 5000,
+  "n_val": 2000,
+  "n_test": 5000,
+  "n_params": 66364418,
+  "trainable_params": 1538,
+  "train_time_s": 173.4781186580658,
+  "time_per_epoch_s": 49.79755425453186,
+  "peak_gpu_mem_mb": 439.2646484375,
+  "infer_time_test_s": 45.43542265892029,
+  "best_epoch": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5835137467384338,
+      "val_loss": 0.5087578892707825,
+      "val_acc": 0.791,
+      "epoch_time_s": 61.790597438812256
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4981217121124268,
+      "val_loss": 0.4850113093852997,
+      "val_acc": 0.7885,
+      "epoch_time_s": 37.804511070251465
+    }
+  ],
+  "hardware": "NVIDIA GeForce RTX 3050 6GB Laptop GPU (6 GB), torch 2.14.1+cu126",
+  "optimizer": "AdamW",
+  "metrics": {
+    "imdb_val": {
+      "accuracy": 0.7885,
+      "precision": 0.8282138794084186,
+      "recall": 0.728,
+      "f1": 0.7748802554550293,
+      "loss": 0.4850113093852997,
+      "tn": 849,
+      "fp": 151,
+      "fn": 272,
+      "tp": 728,
+      "n": 2000
+    },
+    "imdb_test": {
+      "accuracy": 0.7778,
+      "precision": 0.8050065876152833,
+      "recall": 0.7332,
+      "f1": 0.7674272555997488,
+      "loss": 0.4924262762069702,
+      "tn": 2056,
+      "fp": 444,
+      "fn": 667,
+      "tp": 1833,
+      "n": 5000
+    }
+  },
+  "demo_preds": null
+}

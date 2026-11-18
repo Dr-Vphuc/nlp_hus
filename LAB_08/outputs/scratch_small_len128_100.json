@@ -1,0 +1,162 @@
+{
+  "name": "scratch_small_len128_100",
+  "exp": "exp1",
+  "kind": "small",
+  "pretrained": false,
+  "freeze": false,
+  "train_frac": 1.0,
+  "max_len": 128,
+  "epochs": 6,
+  "batch_size": 64,
+  "accum_steps": 1,
+  "lr": 0.0005,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "seed": 42,
+  "full_test": false,
+  "domain_eval": true,
+  "demo": true,
+  "note": "Transformer nhỏ 4 layer, d=256, random init; 6 epoch vì train nhanh và cần nhiều epoch hơn",
+  "model": "SmallTransformer(4L,d256,h4)",
+  "tokenizer": "distilbert-base-uncased",
+  "n_train": 10000,
+  "n_val": 2000,
+  "n_test": 5000,
+  "n_params": 11104770,
+  "trainable_params": 11104770,
+  "train_time_s": 386.60250210762024,
+  "time_per_epoch_s": 62.74091410636902,
+  "peak_gpu_mem_mb": 546.7998046875,
+  "infer_time_test_s": 4.599409818649292,
+  "best_epoch": 3,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6946557677268982,
+      "val_loss": 0.5763956308364868,
+      "val_acc": 0.696,
+      "epoch_time_s": 113.20527005195618
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.551485056591034,
+      "val_loss": 0.5510797500610352,
+      "val_acc": 0.7435,
+      "epoch_time_s": 71.44261240959167
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.47785921630859374,
+      "val_loss": 0.48885655403137207,
+      "val_acc": 0.7665,
+      "epoch_time_s": 81.08394074440002
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.41269572625160217,
+      "val_loss": 0.5067843794822693,
+      "val_acc": 0.7615,
+      "epoch_time_s": 36.911176919937134
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.363312331700325,
+      "val_loss": 0.5419598817825317,
+      "val_acc": 0.7625,
+      "epoch_time_s": 36.8389573097229
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.31200426075458526,
+      "val_loss": 0.5366203784942627,
+      "val_acc": 0.762,
+      "epoch_time_s": 36.9635272026062
+    }
+  ],
+  "hardware": "NVIDIA GeForce RTX 3050 6GB Laptop GPU (6 GB), torch 2.14.1+cu126",
+  "optimizer": "AdamW",
+  "metrics": {
+    "imdb_val": {
+      "accuracy": 0.7665,
+      "precision": 0.7899891186071817,
+      "recall": 0.726,
+      "f1": 0.7566440854611777,
+      "loss": 0.48885655403137207,
+      "tn": 807,
+      "fp": 193,
+      "fn": 274,
+      "tp": 726,
+      "n": 2000
+    },
+    "imdb_test": {
+      "accuracy": 0.7484,
+      "precision": 0.78125,
+      "recall": 0.69,
+      "f1": 0.7327952421410365,
+      "loss": 0.5031986236572266,
+      "tn": 2017,
+      "fp": 483,
+      "fn": 775,
+      "tp": 1725,
+      "n": 5000
+    },
+    "amazon": {
+      "accuracy": 0.752,
+      "precision": 0.7669491525423728,
+      "recall": 0.724,
+      "f1": 0.7448559670781894,
+      "loss": 0.5115994215011597,
+      "tn": 780,
+      "fp": 220,
+      "fn": 276,
+      "tp": 724,
+      "n": 2000
+    },
+    "rotten_tomatoes": {
+      "accuracy": 0.6097560975609756,
+      "precision": 0.6893203883495146,
+      "recall": 0.399624765478424,
+      "f1": 0.505938242280285,
+      "loss": 0.9145237803459167,
+      "tn": 437,
+      "fp": 96,
+      "fn": 320,
+      "tp": 213,
+      "n": 1066
+    }
+  },
+  "demo_preds": [
+    {
+      "text": "This movie is great.",
+      "p_pos": 0.749454140663147
+    },
+    {
+      "text": "I do not like this movie.",
+      "p_pos": 0.03445602208375931
+    },
+    {
+      "text": "The film is not bad at all.",
+      "p_pos": 0.0064007299952209
+    },
+    {
+      "text": "The plot was predictable, but the acting was absolutely excellent.",
+      "p_pos": 0.012552118860185146
+    },
+    {
+      "text": "Oh great, another two hours of my life I will never get back.",
+      "p_pos": 0.5967562794685364
+    },
+    {
+      "text": "I expected to hate it, yet I ended up loving every minute.",
+      "p_pos": 0.0778675451874733
+    },
+    {
+      "text": "The product broke after two days. Terrible quality.",
+      "p_pos": 0.009232214652001858
+    },
+    {
+      "text": "The movie was not good, not even close to being good.",
+      "p_pos": 0.01379536371678114
+    }
+  ]
+}

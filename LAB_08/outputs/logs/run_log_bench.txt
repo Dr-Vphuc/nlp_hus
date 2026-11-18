@@ -1,0 +1,55 @@
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  21%|██        | 21/100 [00:00<00:00, 170.12it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 667.60it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 13/100 [00:00<00:00, 115.02it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 855.67it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  34%|███▍      | 34/100 [00:00<00:00, 337.19it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 841.49it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  36%|███▌      | 36/100 [00:00<00:00, 351.18it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 965.93it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+   max_len  batch_size  ...  time_rel_to_64  T2_rel_to_64
+0       64           4  ...        1.000000           1.0
+1      128           4  ...        1.086599           4.0
+2      256           4  ...        1.397843          16.0
+3      512           4  ...        2.016343          64.0
+
+[4 rows x 6 columns]

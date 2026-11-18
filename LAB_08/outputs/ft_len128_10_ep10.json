@@ -1,0 +1,133 @@
+{
+  "name": "ft_len128_10_ep10",
+  "exp": "exp3-control",
+  "kind": "bert",
+  "pretrained": true,
+  "freeze": false,
+  "train_frac": 0.1,
+  "max_len": 128,
+  "epochs": 10,
+  "batch_size": 32,
+  "accum_steps": 2,
+  "lr": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "seed": 42,
+  "full_test": false,
+  "domain_eval": false,
+  "demo": false,
+  "note": "10% data nhưng 10 epoch (320 bước)",
+  "model": "distilbert-base-uncased",
+  "tokenizer": "distilbert-base-uncased",
+  "n_train": 1000,
+  "n_val": 2000,
+  "n_test": 5000,
+  "n_params": 66364418,
+  "trainable_params": 66364418,
+  "train_time_s": 226.60096669197083,
+  "time_per_epoch_s": 16.216084170341492,
+  "peak_gpu_mem_mb": 1570.2529296875,
+  "infer_time_test_s": 15.498179197311401,
+  "best_epoch": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6788100709915161,
+      "val_loss": 0.6287393569946289,
+      "val_acc": 0.665,
+      "epoch_time_s": 15.71688723564148
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4992845131754875,
+      "val_loss": 0.41042691469192505,
+      "val_acc": 0.81,
+      "epoch_time_s": 15.93503737449646
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3027857465744019,
+      "val_loss": 0.4113022983074188,
+      "val_acc": 0.8195,
+      "epoch_time_s": 16.163361310958862
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1721760179102421,
+      "val_loss": 0.4498021900653839,
+      "val_acc": 0.826,
+      "epoch_time_s": 16.382922887802124
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.07882601156830787,
+      "val_loss": 0.5274302959442139,
+      "val_acc": 0.8305,
+      "epoch_time_s": 16.545966863632202
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0340744710676372,
+      "val_loss": 0.6719808578491211,
+      "val_acc": 0.8195,
+      "epoch_time_s": 16.376354455947876
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.020433306876569985,
+      "val_loss": 0.7400146126747131,
+      "val_acc": 0.8215,
+      "epoch_time_s": 16.458364009857178
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.016166241767816246,
+      "val_loss": 0.7578893899917603,
+      "val_acc": 0.824,
+      "epoch_time_s": 16.535982847213745
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.011007776212412864,
+      "val_loss": 0.7697811126708984,
+      "val_acc": 0.824,
+      "epoch_time_s": 16.06269145011902
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.008372349476907402,
+      "val_loss": 0.7703253030776978,
+      "val_acc": 0.8255,
+      "epoch_time_s": 15.983273267745972
+    }
+  ],
+  "hardware": "NVIDIA GeForce RTX 3050 6GB Laptop GPU (6 GB), torch 2.14.1+cu126",
+  "optimizer": "AdamW",
+  "metrics": {
+    "imdb_val": {
+      "accuracy": 0.81,
+      "precision": 0.7859778597785978,
+      "recall": 0.852,
+      "f1": 0.817658349328215,
+      "loss": 0.41042691469192505,
+      "tn": 768,
+      "fp": 232,
+      "fn": 148,
+      "tp": 852,
+      "n": 2000
+    },
+    "imdb_test": {
+      "accuracy": 0.818,
+      "precision": 0.7859712230215827,
+      "recall": 0.874,
+      "f1": 0.8276515151515151,
+      "loss": 0.406863808631897,
+      "tn": 1905,
+      "fp": 595,
+      "fn": 315,
+      "tp": 2185,
+      "n": 5000
+    }
+  },
+  "demo_preds": null
+}

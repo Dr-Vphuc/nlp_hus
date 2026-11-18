@@ -1,0 +1,15 @@
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:   6%|▌         | 6/100 [00:00<00:02, 40.07it/s]Loading weights:  12%|█▏        | 12/100 [00:00<00:01, 44.65it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 304.51it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+=== ft_len128_50 | exp3 | train=5000 val=2000 test=5000 | params=66,364,418 trainable=66,364,418 | max_len=128 ===
+    step 100/157 loss=0.5168 (3 samples/s)

@@ -1,0 +1,134 @@
+{
+  "name": "bert_random_len128_100",
+  "exp": "exp1",
+  "kind": "bert",
+  "pretrained": false,
+  "freeze": false,
+  "train_frac": 1.0,
+  "max_len": 128,
+  "epochs": 2,
+  "batch_size": 32,
+  "accum_steps": 2,
+  "lr": 0.0001,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "seed": 42,
+  "full_test": false,
+  "domain_eval": true,
+  "demo": true,
+  "note": "Cùng kiến trúc BERT-base nhưng random init; lr 1e-4 (2e-5 là lr cho pretrained)",
+  "model": "distilbert-base-uncased",
+  "tokenizer": "distilbert-base-uncased",
+  "n_train": 10000,
+  "n_val": 2000,
+  "n_test": 5000,
+  "n_params": 66364418,
+  "trainable_params": 66364418,
+  "train_time_s": 338.20861744880676,
+  "time_per_epoch_s": 162.54658663272858,
+  "peak_gpu_mem_mb": 1579.3779296875,
+  "infer_time_test_s": 15.830065250396729,
+  "best_epoch": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6226789588451386,
+      "val_loss": 0.41853052377700806,
+      "val_acc": 0.8135,
+      "epoch_time_s": 161.91249227523804
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.294202033662796,
+      "val_loss": 0.41889771819114685,
+      "val_acc": 0.826,
+      "epoch_time_s": 163.18068099021912
+    }
+  ],
+  "hardware": "NVIDIA GeForce RTX 3050 6GB Laptop GPU (6 GB), torch 2.14.1+cu126",
+  "optimizer": "AdamW",
+  "metrics": {
+    "imdb_val": {
+      "accuracy": 0.8135,
+      "precision": 0.8100890207715133,
+      "recall": 0.819,
+      "f1": 0.8145201392342118,
+      "loss": 0.41853052377700806,
+      "tn": 808,
+      "fp": 192,
+      "fn": 181,
+      "tp": 819,
+      "n": 2000
+    },
+    "imdb_test": {
+      "accuracy": 0.8,
+      "precision": 0.8073770491803278,
+      "recall": 0.788,
+      "f1": 0.7975708502024291,
+      "loss": 0.4448402225971222,
+      "tn": 2030,
+      "fp": 470,
+      "fn": 530,
+      "tp": 1970,
+      "n": 5000
+    },
+    "amazon": {
+      "accuracy": 0.773,
+      "precision": 0.7252475247524752,
+      "recall": 0.879,
+      "f1": 0.794755877034358,
+      "loss": 0.5343928337097168,
+      "tn": 667,
+      "fp": 333,
+      "fn": 121,
+      "tp": 879,
+      "n": 2000
+    },
+    "rotten_tomatoes": {
+      "accuracy": 0.700750469043152,
+      "precision": 0.6606606606606606,
+      "recall": 0.8255159474671669,
+      "f1": 0.7339449541284404,
+      "loss": 0.8009681105613708,
+      "tn": 307,
+      "fp": 226,
+      "fn": 93,
+      "tp": 440,
+      "n": 1066
+    }
+  },
+  "demo_preds": [
+    {
+      "text": "This movie is great.",
+      "p_pos": 0.9989412426948547
+    },
+    {
+      "text": "I do not like this movie.",
+      "p_pos": 0.055720288306474686
+    },
+    {
+      "text": "The film is not bad at all.",
+      "p_pos": 0.0027576221618801355
+    },
+    {
+      "text": "The plot was predictable, but the acting was absolutely excellent.",
+      "p_pos": 0.03622005879878998
+    },
+    {
+      "text": "Oh great, another two hours of my life I will never get back.",
+      "p_pos": 0.9940428137779236
+    },
+    {
+      "text": "I expected to hate it, yet I ended up loving every minute.",
+      "p_pos": 0.9857043027877808
+    },
+    {
+      "text": "The product broke after two days. Terrible quality.",
+      "p_pos": 0.011212034150958061
+    },
+    {
+      "text": "The movie was not good, not even close to being good.",
+      "p_pos": 0.6241790056228638
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:   1%|          | 1/100 [00:00<00:10,  9.17it/s]Loading weights:   2%|▏         | 2/100 [00:00<00:11,  8.82it/s]Loading weights:   3%|▎         | 3/100 [00:00<00:13,  7.09it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 245.48it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+=== ft_len128_100 | core+exp1+exp2+exp3+exp4 | train=10000 val=2000 test=5000 | params=66,364,418 trainable=66,364,418 | max_len=128 ===
+    step 100/313 loss=0.5503 (13 samples/s)
+    step 200/313 loss=0.4584 (17 samples/s)
+    step 300/313 loss=0.4189 (18 samples/s)
+  epoch 1/2 train_loss=0.4163 val_loss=0.3028 val_acc=0.8645 (555s)
+    step 100/313 loss=0.2454 (17 samples/s)
+    step 200/313 loss=0.2435 (20 samples/s)
+    step 300/313 loss=0.2442 (22 samples/s)
+  epoch 2/2 train_loss=0.2434 val_loss=0.3074 val_acc=0.8665 (438s)
+  -> TEST acc=0.8704 f1=0.8701 | train 1118s | peak mem 1354 MB | best epoch 1
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:   5%|▌         | 5/100 [00:00<00:02, 42.91it/s]Loading weights:  12%|█▏        | 12/100 [00:00<00:01, 54.38it/s]Loading weights:  18%|█▊        | 18/100 [00:00<00:01, 55.35it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 293.60it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+=== ft_len128_10 | exp3 | train=1000 val=2000 test=5000 | params=66,364,418 trainable=66,364,418 | max_len=128 ===
+  epoch 1/2 train_loss=0.6625 val_loss=0.5671 val_acc=0.7550 (27s)
+  epoch 2/2 train_loss=0.4746 val_loss=0.4418 val_acc=0.8015 (115s)
+  -> TEST acc=0.7968 f1=0.7979 | train 205s | peak mem 1361 MB | best epoch 2
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 15/100 [00:00<00:00, 144.89it/s]Loading weights:  32%|███▏      | 32/100 [00:00<00:00, 138.42it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 422.42it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+=== ft_len128_25 | exp3 | train=2500 val=2000 test=5000 | params=66,364,418 trainable=66,364,418 | max_len=128 ===
+  epoch 1/2 train_loss=0.5303 val_loss=0.3762 val_acc=0.8230 (106s)
+  epoch 2/2 train_loss=0.3104 val_loss=0.3574 val_acc=0.8365 (448s)
+  -> TEST acc=0.8448 f1=0.8416 | train 612s | peak mem 1355 MB | best epoch 2
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:   3%|▎         | 3/100 [00:00<00:12,  7.80it/s]Loading weights:   4%|▍         | 4/100 [00:00<00:12,  7.78it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 187.61it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+=== ft_len128_50 | exp3 | train=5000 val=2000 test=5000 | params=66,364,418 trainable=66,364,418 | max_len=128 ===
+Traceback (most recent call last):
+  File "F:\Learning\NLP_DL\LAB_08\pretrained_classification.py", line 546, in <module>
+  File "F:\Learning\NLP_DL\LAB_08\pretrained_classification.py", line 533, in main
+    for attempt in range(1, 21):   # GPU dùng chung với tiến trình khác: nếu OOM thì chờ rồi chạy lại
+  File "F:\Learning\NLP_DL\LAB_08\pretrained_classification.py", line 372, in run_experiment
+    step_loss = retry_oom(train_step)
+  File "F:\Learning\NLP_DL\LAB_08\pretrained_classification.py", line 230, in retry_oom
+    return fn(*args, **kw)
+  File "F:\Learning\NLP_DL\LAB_08\pretrained_classification.py", line 365, in train_step
+    scaler.scale(loss).backward()
+  File "F:\Learning\NLP_DL\.venv\lib\site-packages\torch\_tensor.py", line 623, in backward
+    torch.autograd.backward(
+  File "F:\Learning\NLP_DL\.venv\lib\site-packages\torch\autograd\__init__.py", line 395, in backward
+    _engine_run_backward(
+  File "F:\Learning\NLP_DL\.venv\lib\site-packages\torch\autograd\graph.py", line 1072, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling `cublasGemmEx( handle, opa, opb, m, n, k, alpha_ptr, a, CUDA_R_16F, lda, b, CUDA_R_16F, ldb, beta_ptr, c, std::is_same_v<C_Dtype, float> ? CUDA_R_32F : CUDA_R_16F, ldc, compute_type, CUBLAS_GEMM_DEFAULT_TENSOR_OP)`
