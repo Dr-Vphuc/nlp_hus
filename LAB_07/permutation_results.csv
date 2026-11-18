@@ -1,0 +1,9 @@
+S1,S2,layer,experiment,"cosine(pooled S1, pooled S2)",max|diff| pooled,"max over words of max|diff| (cùng từ, 2 câu)"
+I love NLP,NLP love I,Multi-head self-attention,A (no PE),0.9999999403953552,2.9802322387695312e-08,5.960464477539063e-08
+I love NLP,NLP love I,Multi-head self-attention,B (with PE),0.9993961453437805,0.01654025912284851,0.05674061179161072
+I love NLP,NLP love I,Full TransformerBlock,A (no PE),1.0,2.384185791015625e-07,3.5762786865234375e-07
+I love NLP,NLP love I,Full TransformerBlock,B (with PE),0.9984349012374878,0.11552298069000244,1.3073028326034546
+dog bites man,man bites dog,Multi-head self-attention,A (no PE),0.9999999403953552,2.9802322387695312e-08,5.960464477539063e-08
+dog bites man,man bites dog,Multi-head self-attention,B (with PE),0.9993448853492737,0.03141224384307861,0.04816758632659912
+dog bites man,man bites dog,Full TransformerBlock,A (no PE),0.9999998807907104,1.1920928955078125e-07,1.1920928955078125e-07
+dog bites man,man bites dog,Full TransformerBlock,B (with PE),0.9991946816444397,0.11554324626922607,1.3121709823608398
